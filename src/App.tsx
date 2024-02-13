@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import React, { useState, ChangeEvent  } from "react";
 import Todo from "./components/todoCard/Todo";
 import Nav from "./components/nav/Nav";
 
 import "./App.css";
-import { DragDropContext, Draggable, DropResult, Droppable } from "react-beautiful-dnd";
+import { DragDropContext, DropResult, Droppable } from "react-beautiful-dnd";
 interface TodoItem {
   id: number;
   text: string;
